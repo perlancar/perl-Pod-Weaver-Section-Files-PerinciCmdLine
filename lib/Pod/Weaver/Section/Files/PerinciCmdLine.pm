@@ -54,7 +54,7 @@ sub weave_section {
         }
 
         my $text;
-        my $config_name = $cli->config_filename // $cli->program_name . ".conf";
+        my $config_filename = $cli->config_filename // $cli->program_name . ".conf";
         my $config_dirs = $cli->{config_dirs} // ['~', '/etc'];
 
         for my $config_dir (@{$config_dirs}) {
